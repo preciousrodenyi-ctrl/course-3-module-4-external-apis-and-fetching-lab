@@ -1,45 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Weather Alerts App</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      text-align: center;
-    }
-
-    input, button {
-      padding: 10px;
-      margin: 5px;
-    }
-
-    #alerts-display {
-      margin-top: 20px;
-      padding: 10px;
-      background: #f4f4f4;
-      min-height: 100px;
-    }
-
-    #error-message {
-      color: red;
-      margin-top: 10px;
-      display: none;
-    }
-  </style>
 </head>
 
 <body>
-
   <h1>Weather Alerts App</h1>
 
-  <input type="text" id="state-input" placeholder="Enter state abbreviation (e.g. NY)">
+  <input
+    type="text"
+    id="state-input"
+    placeholder="Enter state abbreviation"
+  />
+
   <button id="fetch-alerts">Get Weather Alerts</button>
 
-  <div id="error-message"></div>
+  <div id="error-message" class="hidden"></div>
+
   <div id="alerts-display"></div>
 
   <script src="index.js"></script>
